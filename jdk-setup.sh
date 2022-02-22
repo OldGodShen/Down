@@ -267,6 +267,7 @@ zulu_arm64() {
 
 oracle_x64() {
   echo "由于Oracle限制，本脚本仅能安装OracleOpenJDK17"
+  sleep 2
   echo "开始安装OracleOpenJDK17"
 
   echo "[↓] wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz"
@@ -280,9 +281,9 @@ oracle_x64() {
 
   echo "[+] Creating a OracleOpenJDK17 link"
   rm -f /usr/bin/java17
-  ln -s ${java_install_path}/jdk-17_linux-x64_bin/jdk-17.0.2/bin/java /usr/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2/bin/java /usr/bin/java17
   rm -f /usr/local/bin/java17
-  ln -s ${java_install_path}/jdk-17_linux-x64_bin/jdk-17.0.2/bin/java /usr/local/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2/bin/java /usr/local/bin/java17
   echo
   echo "[-] OracleOpenJDK17 Installed Successfully!"
   echo
@@ -297,6 +298,7 @@ oracle_x86() {
 
 oracle_arm64() {
   echo "由于Oracle限制，本脚本仅能安装OracleOpenJDK17"
+  sleep 2
   echo "开始安装OracleOpenJDK17"
 
   echo "[↓] wget https://download.oracle.com/java/17/latest/jdk-17_linux-aarch64_bin.tar.gz"
@@ -310,9 +312,9 @@ oracle_arm64() {
 
   echo "[+] Creating a OracleOpenJDK17 link"
   rm -f /usr/bin/java17
-  ln -s ${java_install_path}/jdk-17_linux-aarch64_bin/jdk-17.0.2/bin/java /usr/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2/bin/java /usr/bin/java17
   rm -f /usr/local/bin/java17
-  ln -s ${java_install_path}/jdk-17_linux-aarch64_bin/jdk-17.0.2/bin/java /usr/local/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2/bin/java /usr/local/bin/java17
   echo
   echo "[-] OracleOpenJDK17 Installed Successfully!"
   echo
@@ -334,9 +336,9 @@ adopt_x64() {
 
   echo "[+] Creating a AdoptOpenJDK8 link"
   rm -f /usr/bin/java8
-  ln -s ${java_install_path}/OpenJDK8U-jdk_x64_linux_hotspot_8u322b06/jdk8u322-b06/bin/java /usr/bin/java8
+  ln -s ${java_install_path}/jdk8u322-b06/bin/java /usr/bin/java8
   rm -f /usr/local/bin/java8
-  ln -s ${java_install_path}/OpenJDK8U-jdk_x64_linux_hotspot_8u322b06/jdk8u322-b06/bin/java /usr/local/bin/java8
+  ln -s ${java_install_path}/jdk8u322-b06/bin/java /usr/local/bin/java8
   echo
   echo "[-] AdoptOpenJDK8 Installed Successfully!"
   echo
@@ -354,9 +356,9 @@ adopt_x64() {
 
   echo "[+] Creating a AdoptOpenJDK11 link"
   rm -f /usr/bin/java11
-  ln -s ${java_install_path}/OpenJDK11U-jdk_x64_linux_hotspot_11.0.14.1_1/jdk-11.0.14.1+1/bin/java /usr/bin/java11
+  ln -s ${java_install_path}/jdk-11.0.14.1+1/bin/java /usr/bin/java11
   rm -f /usr/local/bin/java11
-  ln -s ${java_install_path}/OpenJDK11U-jdk_x64_linux_hotspot_11.0.14.1_1/jdk-11.0.14.1+1/bin/java /usr/local/bin/java11
+  ln -s ${java_install_path}/jdk-11.0.14.1+1/bin/java /usr/local/bin/java11
   echo
   echo "[-] AdoptOpenJDK11 Installed Successfully!"
   echo
@@ -374,9 +376,9 @@ adopt_x64() {
 
   echo "[+] Creating a AdoptOpenJDK17 link"
   rm -f /usr/bin/java17
-  ln -s ${java_install_path}/OpenJDK17U-jdk_x64_linux_hotspot_17.0.2_8/jdk-17.0.2+8/bin/java /usr/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2+8/bin/java /usr/bin/java17
   rm -f /usr/local/bin/java17
-  ln -s ${java_install_path}/OpenJDK17U-jdk_x64_linux_hotspot_17.0.2_8/jdk-17.0.2+8/bin/java /usr/local/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2+8/bin/java /usr/local/bin/java17
   echo
   echo "[-] AdoptOpenJDK17 Installed Successfully!"
   echo
@@ -405,9 +407,9 @@ adopt_arm64() {
 
   echo "[+] Creating a AdoptOpenJDK8 link"
   rm -f /usr/bin/java8
-  ln -s ${java_install_path}/OpenJDK8U-jdk_aarch64_linux_hotspot_8u322b06/jdk8u322-b06/bin/java /usr/bin/java8
+  ln -s ${java_install_path}/jdk8u322-b06/bin/java /usr/bin/java8
   rm -f /usr/local/bin/java8
-  ln -s ${java_install_path}/OpenJDK8U-jdk_aarch64_linux_hotspot_8u322b06/jdk8u322-b06/bin/java /usr/local/bin/java8
+  ln -s ${java_install_path}/jdk8u322-b06/bin/java /usr/local/bin/java8
   echo
   echo "[-] AdoptOpenJDK8 Installed Successfully!"
   echo
@@ -425,9 +427,9 @@ adopt_arm64() {
 
   echo "[+] Creating a AdoptOpenJDK11 link"
   rm -f /usr/bin/java11
-  ln -s ${java_install_path}/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.14.1_1/jdk-11.0.14.1+1/bin/java /usr/bin/java11
+  ln -s ${java_install_path}/jdk-11.0.14.1+1/bin/java /usr/bin/java11
   rm -f /usr/local/bin/java11
-  ln -s ${java_install_path}/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.14.1_1/jdk-11.0.14.1+1/bin/java /usr/local/bin/java11
+  ln -s ${java_install_path}/jdk-11.0.14.1+1/bin/java /usr/local/bin/java11
   echo
   echo "[-] AdoptOpenJDK11 Installed Successfully!"
   echo
@@ -445,9 +447,9 @@ adopt_arm64() {
 
   echo "[+] Creating a AdoptOpenJDK17 link"
   rm -f /usr/bin/java17
-  ln -s ${java_install_path}/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.2_8/jdk-17.0.2+8/bin/java /usr/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2+8/bin/java /usr/bin/java17
   rm -f /usr/local/bin/java17
-  ln -s ${java_install_path}/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.2_8/jdk-17.0.2+8/bin/java /usr/local/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2+8/bin/java /usr/local/bin/java17
   echo
   echo "[-] AdoptOpenJDK17 Installed Successfully!"
   echo
@@ -471,9 +473,9 @@ liberica_x64() {
 
   echo "[+] Creating a LibericaOpenJDK8 link"
   rm -f /usr/bin/java8
-  ln -s ${java_install_path}/bellsoft-jdk8u322+6-linux-amd64-full/jdk8u322-full/bin/java /usr/bin/java8
+  ln -s ${java_install_path}/jdk8u322-full/bin/java /usr/bin/java8
   rm -f /usr/local/bin/java8
-  ln -s ${java_install_path}/bellsoft-jdk8u322+6-linux-amd64-full/jdk8u322-full/bin/java /usr/local/bin/java8
+  ln -s ${java_install_path}/jdk8u322-full/bin/java /usr/local/bin/java8
   echo
   echo "[-] LibericaOpenJDK8 Installed Successfully!"
   echo
@@ -491,9 +493,9 @@ liberica_x64() {
 
   echo "[+] Creating a LibericaOpenJDK11 link"
   rm -f /usr/bin/java11
-  ln -s ${java_install_path}/bellsoft-jdk11.0.14.1+1-linux-amd64-full/jdk-11.0.14.1-full/bin/java /usr/bin/java11
+  ln -s ${java_install_path}/jdk-11.0.14.1-full/bin/java /usr/bin/java11
   rm -f /usr/local/bin/java11
-  ln -s ${java_install_path}/bellsoft-jdk11.0.14.1+1-linux-amd64-full/jdk-11.0.14.1-full/bin/java /usr/local/bin/java11
+  ln -s ${java_install_path}/jdk-11.0.14.1-full/bin/java /usr/local/bin/java11
   echo
   echo "[-] LibericaOpenJDK11 Installed Successfully!"
   echo
@@ -511,9 +513,9 @@ liberica_x64() {
 
   echo "[+] Creating a LibericaOpenJDK17 link"
   rm -f /usr/bin/java17
-  ln -s ${java_install_path}/bellsoft-jdk17.0.2+9-linux-amd64-full/jdk-17.0.2-full/bin/java /usr/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2-full/bin/java /usr/bin/java17
   rm -f /usr/local/bin/java17
-  ln -s ${java_install_path}/bellsoft-jdk17.0.2+9-linux-amd64-full/jdk-17.0.2-full/bin/java /usr/local/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2-full/bin/java /usr/local/bin/java17
   echo
   echo "[-] LibericaOpenJDK17 Installed Successfully!"
   echo
@@ -542,9 +544,9 @@ liberica_arm64() {
 
   echo "[+] Creating a LibericaOpenJDK8 link"
   rm -f /usr/bin/java8
-  ln -s ${java_install_path}/bellsoft-jdk8u322+6-linux-aarch64/jdk8u322/bin/java /usr/bin/java8
+  ln -s ${java_install_path}/jdk8u322/bin/java /usr/bin/java8
   rm -f /usr/local/bin/java8
-  ln -s ${java_install_path}/bellsoft-jdk8u322+6-linux-aarch64/jdk8u322/bin/java /usr/local/bin/java8
+  ln -s ${java_install_path}/jdk8u322/bin/java /usr/local/bin/java8
   echo
   echo "[-] LibericaOpenJDK8 Installed Successfully!"
   echo
@@ -562,9 +564,9 @@ liberica_arm64() {
 
   echo "[+] Creating a LibericaOpenJDK11 link"
   rm -f /usr/bin/java11
-  ln -s ${java_install_path}/bellsoft-jdk11.0.14.1+1-linux-aarch64-full/jdk-11.0.14.1-full/bin/java /usr/bin/java11
+  ln -s ${java_install_path}/jdk-11.0.14.1-full/bin/java /usr/bin/java11
   rm -f /usr/local/bin/java11
-  ln -s ${java_install_path}/bellsoft-jdk11.0.14.1+1-linux-aarch64-full/jdk-11.0.14.1-full/bin/java /usr/local/bin/java11
+  ln -s ${java_install_path}/jdk-11.0.14.1-full/bin/java /usr/local/bin/java11
   echo
   echo "[-] LibericaOpenJDK11 Installed Successfully!"
   echo
@@ -582,9 +584,9 @@ liberica_arm64() {
 
   echo "[+] Creating a LibericaOpenJDK17 link"
   rm -f /usr/bin/java17
-  ln -s ${java_install_path}/bellsoft-jdk17.0.2+9-linux-aarch64-full/jdk-17.0.2.9-full/bin/java /usr/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2.9-full/bin/java /usr/bin/java17
   rm -f /usr/local/bin/java17
-  ln -s ${java_install_path}/bellsoft-jdk17.0.2+9-linux-aarch64-full/jdk-17.0.2.9-full/bin/java /usr/local/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2.9-full/bin/java /usr/local/bin/java17
   echo
   echo "[-] LibericaOpenJDK17 Installed Successfully!"
   echo
@@ -596,6 +598,7 @@ liberica_arm64() {
 
 microsoft_x64() {
   echo "由于Microsoft并没有8，所以将会安装11和17"
+  sleep 2
   echo "开始安装MicrosoftOpenJDK11"
 
   echo "[↓] wget https://aka.ms/download-jdk/microsoft-jdk-11.0.14.9.1-linux-x64.tar.gz"
@@ -609,9 +612,9 @@ microsoft_x64() {
 
   echo "[+] Creating a MicrosoftOpenJDK11 link"
   rm -f /usr/bin/java11
-  ln -s ${java_install_path}/microsoft-jdk-11.0.14.9.1-linux-x64/jdk-11.0.14+9/bin/java /usr/bin/java11
+  ln -s ${java_install_path}/jdk-11.0.14+9/bin/java /usr/bin/java11
   rm -f /usr/local/bin/java11
-  ln -s ${java_install_path}/microsoft-jdk-11.0.14.9.1-linux-x64/jdk-11.0.14+9/bin/java /usr/local/bin/java11
+  ln -s ${java_install_path}/jdk-11.0.14+9/bin/java /usr/local/bin/java11
   echo
   echo "[-] MicrosoftOpenJDK11 Installed Successfully!"
   echo
@@ -629,9 +632,9 @@ microsoft_x64() {
 
   echo "[+] Creating a MicrosoftOpenJDK17 link"
   rm -f /usr/bin/java17
-  ln -s ${java_install_path}/microsoft-jdk-17.0.2.8.1-linux-x64/jdk-17.0.2+8/bin/java /usr/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2+8/bin/java /usr/bin/java17
   rm -f /usr/local/bin/java17
-  ln -s ${java_install_path}/microsoft-jdk-17.0.2.8.1-linux-x64/jdk-17.0.2+8/bin/java /usr/local/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2+8/bin/java /usr/local/bin/java17
   echo
   echo "[-] MicrosoftOpenJDK17 Installed Successfully!"
   echo
@@ -648,6 +651,7 @@ microsoft_x86() {
 
 microsoft_arm64() {
   echo "由于Microsoft并没有8，所以将会安装11和17"
+  sleep 2
   echo "开始安装MicrosoftOpenJDK11"
 
   echo "[↓] wget https://aka.ms/download-jdk/microsoft-jdk-11.0.14.9.1-linux-aarch64.tar.gz"
@@ -661,9 +665,9 @@ microsoft_arm64() {
 
   echo "[+] Creating a MicrosoftOpenJDK11 link"
   rm -f /usr/bin/java11
-  ln -s ${java_install_path}/microsoft-jdk-11.0.14.9.1-linux-aarch64/jdk-11.0.14+9/bin/java /usr/bin/java11
+  ln -s ${java_install_path}/jdk-11.0.14+9/bin/java /usr/bin/java11
   rm -f /usr/local/bin/java11
-  ln -s ${java_install_path}/microsoft-jdk-11.0.14.9.1-linux-aarch64/jdk-11.0.14+9/bin/java /usr/local/bin/java11
+  ln -s ${java_install_path}/jdk-11.0.14+9/bin/java /usr/local/bin/java11
   echo
   echo "[-] MicrosoftOpenJDK11 Installed Successfully!"
   echo
@@ -681,9 +685,9 @@ microsoft_arm64() {
 
   echo "[+] Creating a MicrosoftOpenJDK17 link"
   rm -f /usr/bin/java17
-  ln -s ${java_install_path}/microsoft-jdk-17.0.2.8.1-linux-aarch64/jdk-17.0.2+8/bin/java /usr/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2+8/bin/java /usr/bin/java17
   rm -f /usr/local/bin/java17
-  ln -s ${java_install_path}/microsoft-jdk-17.0.2.8.1-linux-aarch64/jdk-17.0.2+8/bin/java /usr/local/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2+8/bin/java /usr/local/bin/java17
   echo
   echo "[-] MicrosoftOpenJDK17 Installed Successfully!"
   echo
@@ -707,9 +711,9 @@ semeru_x64() {
 
   echo "[+] Creating a SemeruOpenJDK8 link"
   rm -f /usr/bin/java8
-  ln -s ${java_install_path}/ibm-semeru-open-jdk_x64_linux_8u322b06_openj9-0.30.0/jdk8u322-b06/bin/java /usr/bin/java8
+  ln -s ${java_install_path}/jdk8u322-b06/bin/java /usr/bin/java8
   rm -f /usr/local/bin/java8
-  ln -s ${java_install_path}/ibm-semeru-open-jdk_x64_linux_8u322b06_openj9-0.30.0/jdk8u322-b06/bin/java /usr/local/bin/java8
+  ln -s ${java_install_path}/jdk8u322-b06/bin/java /usr/local/bin/java8
   echo
   echo "[-] SemeruOpenJDK8 Installed Successfully!"
   echo
@@ -727,9 +731,9 @@ semeru_x64() {
 
   echo "[+] Creating a SemeruOpenJDK11 link"
   rm -f /usr/bin/java11
-  ln -s ${java_install_path}/ibm-semeru-open-jdk_x64_linux_11.0.14.1_1_openj9-0.30.1/jdk-11.0.14.1+1/bin/java /usr/bin/java11
+  ln -s ${java_install_path}/jdk-11.0.14.1+1/bin/java /usr/bin/java11
   rm -f /usr/local/bin/java11
-  ln -s ${java_install_path}/ibm-semeru-open-jdk_x64_linux_11.0.14.1_1_openj9-0.30.1/jdk-11.0.14.1+1/bin/java /usr/local/bin/java11
+  ln -s ${java_install_path}/jdk-11.0.14.1+1/bin/java /usr/local/bin/java11
   echo
   echo "[-] SemeruOpenJDK11 Installed Successfully!"
   echo
@@ -747,9 +751,9 @@ semeru_x64() {
 
   echo "[+] Creating a SemeruOpenJDK17 link"
   rm -f /usr/bin/java17
-  ln -s ${java_install_path}/ibm-semeru-open-jdk_x64_linux_17.0.2_8_openj9-0.30.0/jdk-17.0.2+8/bin/java /usr/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2+8/bin/java /usr/bin/java17
   rm -f /usr/local/bin/java17
-  ln -s ${java_install_path}/ibm-semeru-open-jdk_x64_linux_17.0.2_8_openj9-0.30.0/jdk-17.0.2+8/bin/java /usr/local/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2+8/bin/java /usr/local/bin/java17
   echo
   echo "[-] SemeruOpenJDK17 Installed Successfully!"
   echo
@@ -778,9 +782,9 @@ semeru_arm64() {
 
   echo "[+] Creating a SemeruOpenJDK8 link"
   rm -f /usr/bin/java8
-  ln -s ${java_install_path}/ibm-semeru-open-jdk_aarch64_linux_8u322b06_openj9-0.30.0/jdk8u322-b06/bin/java /usr/bin/java8
+  ln -s ${java_install_path}/jdk8u322-b06/bin/java /usr/bin/java8
   rm -f /usr/local/bin/java8
-  ln -s ${java_install_path}/ibm-semeru-open-jdk_aarch64_linux_8u322b06_openj9-0.30.0/jdk8u322-b06/bin/java /usr/local/bin/java8
+  ln -s ${java_install_path}/jdk8u322-b06/bin/java /usr/local/bin/java8
   echo
   echo "[-] SemeruOpenJDK8 Installed Successfully!"
   echo
@@ -798,9 +802,9 @@ semeru_arm64() {
 
   echo "[+] Creating a SemeruOpenJDK11 link"
   rm -f /usr/bin/java11
-  ln -s ${java_install_path}/ibm-semeru-open-jdk_aarch64_linux_11.0.14.1_1_openj9-0.30.1/jdk-11.0.14.1+1/bin/java /usr/bin/java11
+  ln -s ${java_install_path}/jdk-11.0.14.1+1/bin/java /usr/bin/java11
   rm -f /usr/local/bin/java11
-  ln -s ${java_install_path}/ibm-semeru-open-jdk_aarch64_linux_11.0.14.1_1_openj9-0.30.1/jdk-11.0.14.1+1/bin/java /usr/local/bin/java11
+  ln -s ${java_install_path}/jdk-11.0.14.1+1/bin/java /usr/local/bin/java11
   echo
   echo "[-] SemeruOpenJDK11 Installed Successfully!"
   echo
@@ -818,9 +822,9 @@ semeru_arm64() {
 
   echo "[+] Creating a SemeruOpenJDK17 link"
   rm -f /usr/bin/java17
-  ln -s ${java_install_path}/ibm-semeru-open-jdk_aarch64_linux_17.0.2_8_openj9-0.30.0/jdk-17.0.2+8/bin/java /usr/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2+8/bin/java /usr/bin/java17
   rm -f /usr/local/bin/java17
-  ln -s ${java_install_path}/ibm-semeru-open-jdk_aarch64_linux_17.0.2_8_openj9-0.30.0/jdk-17.0.2+8/bin/java /usr/local/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.2+8/bin/java /usr/local/bin/java17
   echo
   echo "[-] SemeruOpenJDK17 Installed Successfully!"
   echo
@@ -844,9 +848,9 @@ dragonwell_x64() {
 
   echo "[+] Creating a DragonwellOpenJDK8 link"
   rm -f /usr/bin/java8
-  ln -s ${java_install_path}/Alibaba_Dragonwell_8.10.11_x64_linux/dragonwell-8.10.11/bin/java /usr/bin/java8
+  ln -s ${java_install_path}/dragonwell-8.10.11/bin/java /usr/bin/java8
   rm -f /usr/local/bin/java8
-  ln -s ${java_install_path}/Alibaba_Dragonwell_8.10.11_x64_linux/dragonwell-8.10.11/bin/java /usr/local/bin/java8
+  ln -s ${java_install_path}/dragonwell-8.10.11/bin/java /usr/local/bin/java8
   echo
   echo "[-] DragonwellOpenJDK8 Installed Successfully!"
   echo
@@ -864,9 +868,9 @@ dragonwell_x64() {
 
   echo "[+] Creating a DragonwellOpenJDK11 link"
   rm -f /usr/bin/java11
-  ln -s ${java_install_path}/Alibaba_Dragonwell_11.0.14.10_x64_linux/dragonwell-11.0.14.10+0-GA/bin/java /usr/bin/java11
+  ln -s ${java_install_path}/dragonwell-11.0.14.10+0-GA/bin/java /usr/bin/java11
   rm -f /usr/local/bin/java11
-  ln -s ${java_install_path}/Alibaba_Dragonwell_11.0.14.10_x64_linux/dragonwell-11.0.14.10+0-GA/bin/java /usr/local/bin/java11
+  ln -s ${java_install_path}/dragonwell-11.0.14.10+0-GA/bin/java /usr/local/bin/java11
   echo
   echo "[-] DragonwellOpenJDK11 Installed Successfully!"
   echo
@@ -884,9 +888,9 @@ dragonwell_x64() {
 
   echo "[+] Creating a DragonwellOpenJDK17 link"
   rm -f /usr/bin/java17
-  ln -s ${java_install_path}/Alibaba_Dragonwell_17.0.1.0.1%2B12_x64_linux/jdk-17.0.1.0.1+12/bin/java /usr/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.1.0.1+12/bin/java /usr/bin/java17
   rm -f /usr/local/bin/java17
-  ln -s ${java_install_path}/Alibaba_Dragonwell_17.0.1.0.1%2B12_x64_linux/jdk-17.0.1.0.1+12/bin/java /usr/local/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.1.0.1+12/bin/java /usr/local/bin/java17
   echo
   echo "[-] DragonwellOpenJDK17 Installed Successfully!"
   echo
@@ -915,9 +919,9 @@ dragonwell_arm64() {
 
   echo "[+] Creating a DragonwellOpenJDK8 link"
   rm -f /usr/bin/java8
-  ln -s ${java_install_path}/Alibaba_Dragonwell_8.10.11_aarch64_linux/dragonwell-8.10.11/bin/java /usr/bin/java8
+  ln -s ${java_install_path}/dragonwell-8.10.11/bin/java /usr/bin/java8
   rm -f /usr/local/bin/java8
-  ln -s ${java_install_path}/Alibaba_Dragonwell_8.10.11_aarch64_linux/dragonwell-8.10.11/bin/java /usr/local/bin/java8
+  ln -s ${java_install_path}/dragonwell-8.10.11/bin/java /usr/local/bin/java8
   echo
   echo "[-] DragonwellOpenJDK8 Installed Successfully!"
   echo
@@ -935,9 +939,9 @@ dragonwell_arm64() {
 
   echo "[+] Creating a DragonwellOpenJDK11 link"
   rm -f /usr/bin/java11
-  ln -s ${java_install_path}/Alibaba_Dragonwell_11.0.14.10_aarch64_linux/dragonwell-11.0.14.10+0-GA/bin/java /usr/bin/java11
+  ln -s ${java_install_path}/dragonwell-11.0.14.10+0-GA/bin/java /usr/bin/java11
   rm -f /usr/local/bin/java11
-  ln -s ${java_install_path}/Alibaba_Dragonwell_11.0.14.10_aarch64_linux/dragonwell-11.0.14.10+0-GA/bin/java /usr/local/bin/java11
+  ln -s ${java_install_path}/dragonwell-11.0.14.10+0-GA/bin/java /usr/local/bin/java11
   echo
   echo "[-] DragonwellOpenJDK11 Installed Successfully!"
   echo
@@ -955,9 +959,9 @@ dragonwell_arm64() {
 
   echo "[+] Creating a DragonwellOpenJDK17 link"
   rm -f /usr/bin/java17
-  ln -s ${java_install_path}/Alibaba_Dragonwell_17.0.1.0.1%2B12_aarch64_linux/jdk-17.0.1.0.1+12/bin/java /usr/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.1.0.1+12/bin/java /usr/bin/java17
   rm -f /usr/local/bin/java17
-  ln -s ${java_install_path}/Alibaba_Dragonwell_17.0.1.0.1%2B12_aarch64_linux/jdk-17.0.1.0.1+12/bin/java /usr/local/bin/java17
+  ln -s ${java_install_path}/jdk-17.0.1.0.1+12/bin/java /usr/local/bin/java17
   echo
   echo "[-] DragonwellOpenJDK17 Installed Successfully!"
   echo
@@ -969,8 +973,8 @@ dragonwell_arm64() {
 
 
 Finish() {
-  echo "已安装完成，可以通过java8,java11,java17进行调用"
-  exit 1
+  echo "已安装完成"
+  exit
 }
 
 
@@ -981,9 +985,9 @@ fi
 
 Get_Pack_Manager(){
 	if [ -f "/usr/bin/yum" ] && [ -d "/etc/yum.repos.d" ]; then
-		PM="yum -y"
+		PM="yum install -y"
   	elif [ -f "/usr/bin/apt" ] && [ -f "/usr/bin/dpkg" ]; then
-		PM="apt -y"
+		PM="apt install -y"
   	elif [ -f "/usr/bin/pacman" ]; then
 		PM="pacman -S --noconfirm"
   	elif [ -f "/usr/bin/apk" ]; then
@@ -991,7 +995,7 @@ Get_Pack_Manager(){
 	fi
 }
 
-echo "+----------------------------------------------------------------------
+echo "+---------------------------------------------------------------------
 | JDK Install
 +----------------------------------------------------------------------
 | Shell Install Script by OldGodShen
@@ -1003,6 +1007,8 @@ echo "安装完成后，可以通过java8,java11,java17进行调用"
 
 Get_Pack_Manager
 echo "[+] 安装tar,ca-certificates,wget"
-$PM tar wget ca-certificates unzip
+echo "$PM tar wget ca-certificates"
+$PM tar wget ca-certificates
+sleep 2
 
 Choose_JDK
