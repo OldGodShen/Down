@@ -880,11 +880,11 @@ dragonwell_x64() {
   echo "[↓] wget https://github.com/alibaba/dragonwell17/releases/download/dragonwell-17.0.1.0.1%2B12_jdk-17.0.1-ga/Alibaba_Dragonwell_17.0.1.0.1%2B12_x64_linux.tar.gz"
   wget https://github.com/alibaba/dragonwell17/releases/download/dragonwell-17.0.1.0.1%2B12_jdk-17.0.1-ga/Alibaba_Dragonwell_17.0.1.0.1%2B12_x64_linux.tar.gz
 
-  echo "[↑] tar -zxf Alibaba_Dragonwell_17.0.1.0.1%2B12_x64_linux.tar.gz"
-  tar -zxf Alibaba_Dragonwell_17.0.1.0.1%2B12_x64_linux.tar.gz
+  echo "[↑] tar -zxf Alibaba_Dragonwell_17.0.1.0.1+12_x64_linux.tar.gz"
+  tar -zxf Alibaba_Dragonwell_17.0.1.0.1+12_x64_linux.tar.gz
 
-  echo "[x] rm -rf Alibaba_Dragonwell_17.0.1.0.1%2B12_x64_linux.tar.gz"
-  rm -rf Alibaba_Dragonwell_17.0.1.0.1%2B12_x64_linux.tar.gz
+  echo "[x] rm -rf Alibaba_Dragonwell_17.0.1.0.1+12_x64_linux.tar.gz"
+  rm -rf Alibaba_Dragonwell_17.0.1.0.1+12_x64_linux.tar.gz
 
   echo "[+] Creating a DragonwellOpenJDK17 link"
   rm -f /usr/bin/java17
